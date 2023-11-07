@@ -1,5 +1,64 @@
 <!DOCTYPE html>
 <!--Dani Chavira-->
 <html lang="en">
-
+    <form action="thankyou.html" method="get">
+        <!--Contact Info-->
+            <!--fName Text-->
+            <label for="fName">First Name:</label>
+            <input type="text" id="fName" name="fName">
+            <!--lName Text-->
+            <label for="lName">Last Name:</label>
+            <input type="text" id="lName" name="lName">
+            <!--Email Text-->
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+        <br><!--Reservation Request-->
+            <!--Teacher Drop Down-->
+            <label for="teacher">Teacher:</label>
+            <select name="teacher" id="teacher">
+                <option value="tiffany_ford">Tiffany Ford</option>
+                <option value="kirsten markley">Kirsten Markley</option>
+                <option value="jackson lewis">Jackson Lewis</option>
+            </select>
+        <br><!--Month Drop Down-->
+            <label for="month">Month:</label>
+            <select name="month" id="month">
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+        <br><!--Day Drop Down-->
+            <label for="day">Day:</label>
+            <input type="number" name="day" id="day" min="1" max="31">
+        <br><!--AM/PM Radio-->
+           <input type="radio" id="AM" name="TOD"  value="AM">
+           <label for="AM">AM</label>
+           <input type="radio" id="PM" name="TOD" value="PM">
+           <label for="PM">PM</label>
+        <br><!--Class Selection Checkbox-->
+            <input type="radio" id="java" name="java" value="added">
+            <label for="java">Java</label>
+            <input type="radio" id="C#" name="C#" value="added">
+            <label for="C#">C#</label>
+            <input type="radio" id="webdev" name="webdev" value="added">
+            <label for="webdev">Web Dev</label>
+            <input type="radio" id="database" name="database" value="added">
+            <label for="database">Database</label>
+            <input type="radio" id="sysAD" name="sysAD" value="added">
+            <label for="sysAD">System Administration & Development</label>
+        <br><!--Additional Info Text Area-->
+        <label for="textarea">Aditional Info:</label><br>
+        <textarea id="textarea" name="xtrainfo" rows="5" cols="50"></textarea>
+        <br><!--Submit Button-->
+        <input type="submit" value="Submit">
+    </form>
 </html>
